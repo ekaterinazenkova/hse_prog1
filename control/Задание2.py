@@ -1,4 +1,5 @@
-with open("/Users/ekaterinazenkova/Desktop/control_languages.txt", 'r', encoding="utf-8") as f:
+#with open("/Users/ekaterinazenkova/Desktop/control_languages.txt", 'r', encoding="utf-8") as f: (путь к файлу на моём компьютере)
+with open("control_languages.txt", 'r', encoding="utf-8") as f:
     print("Задание2")
     line = f.readline()
     status = "Critically endangered"
