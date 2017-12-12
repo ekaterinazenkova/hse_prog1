@@ -4,7 +4,7 @@ word = input("Введите слово: ")
 while word != "":
     list.append(word)
     word = input("Введите слово: ")
-
+#with open("/Users/ekaterinazenkova/Desktop/control_languages.txt", 'r', encoding="utf-8") as f: (этот путь был на моём компьютере)
 with open("control_languages.txt", 'r', encoding="utf-8") as f:
     for word in list:
 #        print (word)
