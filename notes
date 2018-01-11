@@ -1,3 +1,13 @@
 https://www.tutorialspoint.com/python/string_lower.htm
 
 http://devpractice.ru/python-lesson-12-input-output-work-with-files/
+
+
+
+with open("/Users/student/Desktop/new.txt", "r", encoding="utf-8") as f:
+    line = f.readline()
+   
+    for line in f:
+        line = line.split()
+        line = f.readline()
+    print (line.lower())
