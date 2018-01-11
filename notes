@@ -2,6 +2,7 @@ https://www.tutorialspoint.com/python/string_lower.htm
 
 http://devpractice.ru/python-lesson-12-input-output-work-with-files/
 
+https://ru.stackoverflow.com/questions/439881/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B2-csv-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%87%D0%BA%D1%83?rq=1
 
 
 with open("/Users/student/Desktop/new.txt", "r", encoding="utf-8") as f:
