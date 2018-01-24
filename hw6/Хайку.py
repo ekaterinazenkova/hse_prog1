@@ -2,7 +2,7 @@
 import random
 def get_word(filename):
     word=""
-    with open ("/Users/ekaterinazenkova/Desktop/"+filename, "r", encoding="utf-8") as f:
+    with open ("filename", "r", encoding="utf-8") as f:
         word = f.readline()
         word = word.split()
         word = random.choice(word)
