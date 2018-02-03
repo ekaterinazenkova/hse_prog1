@@ -1,0 +1,9 @@
+    text =""
+    line = f.readline()
+    while line:
+        line = line.strip() #удаляю пробелы в начале и конце строки
+        text += line # это так покороче записывают: text = text + line
+        line = f.readline()
+
+    text = text.lower()
+    words = text.split(' ')
