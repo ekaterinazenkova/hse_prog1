@@ -1,5 +1,5 @@
 import re
-with open("/Users/ekaterinazenkova/Desktop/Corpus.xml","r", encoding="utf-8") as f:
+with open("Corpus.xml","r", encoding="utf-8") as f:
     text = f.read()
     
     result = ""
@@ -9,6 +9,6 @@ with open("/Users/ekaterinazenkova/Desktop/Corpus.xml","r", encoding="utf-8") as
 
 
 
-with open("/Users/ekaterinazenkova/Desktop/Corpus.xml","w", encoding="utf-8") as o:
+with open("text1.txt","w", encoding="utf-8") as o:
     o.write(result)
     
