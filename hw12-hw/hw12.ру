@@ -1,0 +1,56 @@
+import os
+import shutil
+import re
+
+path = r'/Users/ekaterinazenkova/Desktop/hw12/01'
+os.makedirs(path)
+
+
+with open('/Users/ekaterinazenkova/Desktop/empty.txt', 'x'):
+    pass
+with open('/Users/ekaterinazenkova/Desktop/empty1.txt', 'x'):
+    pass
+with open('/Users/ekaterinazenkova/Desktop/empty2.txt', 'x'):
+    pass
+
+file = '/Users/ekaterinazenkova/Desktop/empty.txt'
+file1 = '/Users/ekaterinazenkova/Desktop/empty1.txt'
+file2 = '/Users/ekaterinazenkova/Desktop/empty2.txt'
+
+papka = '/Users/ekaterinazenkova/Desktop/hw12'
+papka1 = '/Users/ekaterinazenkova/Desktop/hw12/01'
+
+path = shutil.move(file, papka)
+path1 = shutil.move(file1, papka)
+path2 = shutil.move(file2, papka1)
+
+
+c = 0
+d = 0
+
+path = '/Users/ekaterinazenkova/Desktop/hw12'
+dirpath, filename = os.path.split(path)
+
+a = re.search('[0-9]', filename)
+
+if a == "None":
+    c += 0
+else:
+    c += 1
+
+path1 = '/Users/ekaterinazenkova/Desktop/hw12/01'
+dirpath, filename1 = os.path.split(path)
+
+b = re.search('[0-9]', filename1)
+
+if b == "None":
+    d += 0
+else:
+    d += 1
+
+result = c+d
+print("Папок, содержащих в названии цифру: ",result)
+
+
+file_list = os.listdir('/Users/ekaterinazenkova/Desktop/hw12')
+print(file_list)
