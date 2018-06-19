@@ -82,4 +82,11 @@ with open(FILENAME, "a", newline="") as file:
     user = ["doc_id", _rbk2.xhtml, _rbk3.xhtml, _rbk4.xhtml, _rbk6.xhtml, _rbk7.xhtml, _rian1.xhtml, _rian2.xhtml, _rian3.xhtml, _rian5.xhtml, _itartass1.html, _itartass2.html, _itartass3.html, _itartass4.html, _itartass5.html]
     writer = csv.writer(file)
     writer.writerow(user)
+                   
+                   
+                   
+      #или в тестовый файл
+# with open ("tablicha.txt", "w", encoding="utf-8") as q:
+#     q.write("doc_id"+ "_rbk2.xhtml"+"\n"+ "_rbk3.xhtml""+"\n"+ "_rbk4.xhtml"+"\n"+ "_rbk6.xhtml"+"\n"+ "_rbk7.xhtml"+"\n"+ "_rian1.xhtml"+"\n"+ "_rian2.xhtml"+"\n"+ "_rian3.xhtml"+"\n"+ "_rian5.xhtml"+"\n"+ "_itartass1.html"+"\n"+ "_itartass2.html"+"\n"+ "_itartass3.html"+"\n"+ "_itartass4.html"+"\n"+ "_itartass5.html") и так далее
+#     q.close()
     
